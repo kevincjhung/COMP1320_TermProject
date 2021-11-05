@@ -22,7 +22,6 @@ const unzipper = require('unzipper'),
 
 /**
  * Description: decompress file from given pathIn, write to given pathOut 
- *  
  * @param {string} pathIn 
  * @param {string} pathOut 
  * @return {promise}
@@ -52,7 +51,6 @@ const readDir = (dir) => {
       if (err) {
         reject(err);
       }
-      
       let filesPNG = []; // array with only the .png file names
     
       for(let i= 0; i < files.length; i++){
