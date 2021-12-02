@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Users/kevincjhung/Documents/GitHub/COMP1320_TermProject/milestone2/public/createCardStyles.css">
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="devCardHeading">
+      Create Your Dev Card
+    </h1>
+    
+    <!-- the form action must match function in index.js -->
+    <form action="/create" method="post">
+      <label for="fullName">Full Name: </label>
+      <input type="text" id="fullName" name="fullName"> <br>
+      
+      <label for="aboutMe"> About Me </label>
+      <input type="text" id="aboutMe" name="aboutMe"> <br>
+      
+      <label for="githubURL"> Github URL </label>
+      <input type="text" id="githubURL" name="githubURL"> <br>
+
+      <label for="twitterURL"> Twitter URL </label>
+      <input type="text" id="twitterURL" name="twitterURL"> <br>
+
+      <label for="favouriteBooks"> Favourite Books (separated by comma) </label>
+      <input type="text" id="favouriteBooks" name="favouriteBooks"> <br>
+
+      <label for="favouriteArtists"> Favourite Artists (separated by comma) </label>
+      <input type="text" id="favouriteArtists" name="favouriteBooks"> <br>
+
+      <input type="submit" value="Create Site">
+    </form>
+  </body>
 </html>
